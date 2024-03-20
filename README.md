@@ -209,9 +209,7 @@
       - Integrate Docker security scanning tools into CI/CD pipelines for vulnerability assessment.
       - Implement compliance checks for Docker images using tools like Docker Bench for Security or OpenSCAP.
       - Automate security and compliance checks as part of the Docker image build process.
-   - **Exercise 25
-
- - Docker High Availability and Disaster Recovery:**
+   - **Exercise 25 - Docker High Availability and Disaster Recovery:**
       - Design and deploy highly available Docker environments with redundancy and failover mechanisms.
       - Implement disaster recovery strategies for Docker containers and data volumes.
       - Test failover scenarios and recovery procedures to ensure business continuity.
