@@ -59,6 +59,30 @@
          ```bash
          docker network create my-network
          ```
+   - **Managing Docker Volumes:**
+     - `docker volume ls`: Lists Docker volumes.
+     - `docker volume create <volume-name>`: Creates a new Docker volume.
+     - `docker volume rm <volume-name>`: Removes a Docker volume.
+   - **Inspecting Containers and Images:**
+     - `docker inspect <container-or-image>`: Displays detailed information about a container or image.
+     - `docker stats <container-id>`: Displays live system resource usage statistics for a running container.
+   - **Container Logs:**
+     - `docker logs <container-id>`: Displays the logs of a container.
+     - `docker logs -f <container-id>`: Follows the logs of a container in real-time.
+   - **Managing Docker Swarm (if applicable):**
+     - `docker swarm init`: Initializes a Docker Swarm on the current node.
+     - `docker swarm join`: Joins a node to an existing Docker Swarm.
+     - `docker service <command>`: Manages Docker services in a Swarm.
+     - `docker node <command>`: Manages Docker Swarm nodes.
+   - **Managing Docker Registry (if applicable):**
+     - `docker login`: Logs in to a Docker registry.
+     - `docker push <image-name>`: Pushes a Docker image to a registry.
+     - `docker pull <image-name>`: Pulls a Docker image from a registry.
+   - **Cleaning Up Docker Resources:**
+     - `docker system prune`: Removes unused data such as stopped containers, dangling images, and unused networks and volumes.
+     - `docker container prune`: Removes all stopped containers.
+     - `docker image prune`: Removes unused images.
+     - `docker volume prune`: Removes unused volumes.
 
 ### 3. **Containerization and Deployment:**
    - **Containerizing an Application:**
