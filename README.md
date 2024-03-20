@@ -7,6 +7,13 @@
       - *Image:* A read-only template with instructions for creating a Docker container. Images are used to create containers.
       - *Containerization:* The process of encapsulating an application and its dependencies into a container to ensure consistency across different environments.
       - *Dockerfile:* A text file containing instructions for building a Docker image. It defines the environment inside the container.
+      - **Docker Hub:** Docker Hub is a cloud-based repository where Docker users can find, share, and store container images. It serves as a central resource for Docker images, allowing users to easily access and distribute pre-built containers.
+      - **Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. It uses a YAML file to configure the services, networks, and volumes required for an application, enabling developers to define complex environments with multiple interconnected containers.
+      - **Docker Swarm:** Docker Swarm is a native clustering and orchestration tool for Docker containers. It allows users to create and manage a cluster of Docker hosts, enabling high availability, scalability, and load balancing for containerized applications.
+      - **Docker Registry:** A Docker Registry is a storage and distribution service for Docker images. It stores Docker images that can be shared within an organization or publicly accessible. Docker Hub is a popular example of a Docker Registry, but organizations can also set up private registries for internal use.
+      - **Docker Volume:** A Docker Volume is a persistent data storage mechanism for Docker containers. Volumes enable containers to store and share data across container restarts or when containers are moved between hosts. They provide a way to manage data that needs to persist beyond the lifetime of a container.
+      - **Docker Networking:** Docker Networking allows containers to communicate with each other and with external networks. Docker provides a range of networking options, including bridge networks, overlay networks, and host networks, to facilitate communication between containers and connect containers to external resources.
+      - **Dockerfile Best Practices:** Dockerfile Best Practices refer to guidelines and recommendations for writing efficient and secure Dockerfiles. These best practices help optimize Docker images, reduce image size, minimize security vulnerabilities, and improve the overall performance of containerized applications.
 
 ### 2. **Basic Docker Commands:**
    - **Installation and Setup:**
