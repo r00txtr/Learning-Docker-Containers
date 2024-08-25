@@ -125,7 +125,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
    ```yaml
    services:
-  app:
+    app:
     image: node:18-alpine
     command: sh -c "yarn install && yarn run dev"
     ports:
@@ -139,7 +139,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
       MYSQL_PASSWORD: secret
       MYSQL_DB: todos
 
-  mysql:
+    mysql:
     image: mysql:8.0
     volumes:
       - todo-mysql-data:/var/lib/mysql
@@ -147,8 +147,8 @@ Docker Compose is a tool for defining and running multi-container Docker applica
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: todos
 
-volumes:
-  todo-mysql-data:
+    volumes:
+    todo-mysql-data:
    ```
 
 2. **Explanation**:
