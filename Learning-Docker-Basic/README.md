@@ -124,14 +124,31 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 1. **Create a `docker-compose.yml` file** in your project directory:
 
    ```yaml
-   version: '3'
    services:
-     web:
-       build: .
-       ports:
-         - "4000:80"
-     redis:
-       image: "redis:alpine"
+  app:
+    image: node:18-alpine
+    command: sh -c "yarn install && yarn run dev"
+    ports:
+      - 0.0.0.0:3000:3000
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
+
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: todos
+
+volumes:
+  todo-mysql-data:
    ```
 
 2. **Explanation**:
